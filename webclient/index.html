@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather_API</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="3600">
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css"></link> -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/Semantic-UI/dist/semantic.min.css"></link>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/toastr.css">
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.22.0/polyfill.js"></script> -->
+
+  <script>
+    if (typeof Object.assign != 'function') {
+      Object.assign = function(target) {
+        'use strict';
+        if (target == null) {
+          throw new TypeError('Cannot convert undefined or null to object');
+        }
+        target = Object(target);
+        for (var index = 1; index < arguments.length; index++) {
+          var source = arguments[index];
+          if (source != null) {
+            for (var key in source) {
+              if (Object.prototype.hasOwnProperty.call(source, key)) {
+                target[key] = source[key];
+              }
+            }
+          }
+        }
+        return target;
+      };
+    }
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="mountapp"></div>
+  <div id="childapp"></div>
+</body>
+<script href="./css/home.css" rel="stylesheet"></script>
+<script src="./dist/bundle.js" charset="utf-8"></script>
+
+</html>
